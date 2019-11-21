@@ -48,7 +48,7 @@ Wire Wire Line
 	2900 2500 2600 2500
 Wire Wire Line
 	3950 1000 4000 1000
-Text Label 2800 1000 2    50   ~ 0
+Text Label 2950 1000 2    50   ~ 0
 ~RST~
 Text Label 2800 1200 2    50   ~ 0
 Aref
@@ -3146,7 +3146,6 @@ Text Label 4000 1200 0    50   ~ 0
 VBUS
 Wire Wire Line
 	3950 1200 4000 1200
-NoConn ~ 2800 1000
 Wire Wire Line
 	5500 3550 5500 3450
 Wire Wire Line
@@ -3270,6 +3269,36 @@ F 1 "GND" H 4400 5900 50  0000 C CNN
 F 2 "" H 4400 6050 50  0001 C CNN
 F 3 "" H 4400 6050 50  0001 C CNN
 	1    4400 6050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 1000 0    50   Input ~ 0
+!RST
+$Comp
+L tom-mechanical:SW_SPST SW1
+U 1 1 5DD662DA
+P 3600 4150
+F 0 "SW1" V 3554 4248 50  0000 L CNN
+F 1 "SW_SPST" V 3645 4248 50  0000 L CNN
+F 2 "tom-mechanical:SW_Push_1P1T_NO_CK_KMR2" H 3600 4150 50  0001 C CNN
+F 3 "~" H 3600 4150 50  0001 C CNN
+	1    3600 4150
+	0    1    1    0   
+$EndComp
+Text GLabel 3500 3850 0    50   Input ~ 0
+!RST
+Wire Wire Line
+	3500 3850 3600 3850
+Wire Wire Line
+	3600 3850 3600 3950
+$Comp
+L power:GND #PWR05
+U 1 1 5DD6B268
+P 3600 4350
+F 0 "#PWR05" H 3600 4100 50  0001 C CNN
+F 1 "GND" H 3600 4200 50  0000 C CNN
+F 2 "" H 3600 4350 50  0001 C CNN
+F 3 "" H 3600 4350 50  0001 C CNN
+	1    3600 4350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
