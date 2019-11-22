@@ -198,10 +198,10 @@
       (net 1 GND))
     (pad 1 smd rect (at -2.05 -0.8) (size 0.9 1) (layers F.Cu F.Paste F.Mask)
       (net 30 !RST))
-    (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_Push_1P1T_NO_CK_KMR2.wrl
-      (at (xyz 0 0 0))
+    (model "${KIPRJMOD}/tom-kicad/footprints/3dmodels/KMR621NG LFS--3DModel-STEP-56544.STEP"
+      (offset (xyz 0 0 1.4))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -245,9 +245,9 @@
     (pad 1 thru_hole oval (at 6.35 -1.27) (size 2.54 1.7) (drill 1 (offset -0.4 0)) (layers *.Cu *.Mask)
       (net 20 MISC))
     (model ${KIPRJMOD}/tom-kicad/footprints/3dmodels/SFH11-xxPC-D06-RA-BK.STEP
-      (offset (xyz -6.4 11.5 3))
+      (offset (xyz 6.4 -11.4 3))
       (scale (xyz 1 1 1))
-      (rotate (xyz 180 -90 180))
+      (rotate (xyz 0 -90 180))
     )
   )
 
@@ -290,6 +290,11 @@
       (net 16 /GPIO11))
     (pad 1 smd rect (at 6.35 -2.54 270) (size 3 1.5) (layers F.Cu F.Paste F.Mask)
       (net 12 /GPIO05))
+    (model ${KIPRJMOD}/tom-kicad/footprints/3dmodels/SSM-106-L-DV-A.stp
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module tom-connectors:2X6_SMD_RA_SOCKET (layer F.Cu) (tedit 5DD5F463) (tstamp 5DD54013)
@@ -331,6 +336,11 @@
       (net 5 /A4))
     (pad 1 smd rect (at 6.35 -2.54 270) (size 3 1.5) (layers F.Cu F.Paste F.Mask)
       (net 9 /A0))
+    (model ${KIPRJMOD}/tom-kicad/footprints/3dmodels/SSM-106-L-DV-A.stp
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module tom-passives:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5DD541DA)
@@ -494,10 +504,10 @@
       (net 19 /EN))
     (pad 1 thru_hole rect (at 0 0 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 27 /+BATT))
-    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x12_P2.54mm_Vertical.wrl
-      (at (xyz 0 0 0))
+    (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.wrl
+      (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 180 0))
     )
   )
 
@@ -562,10 +572,10 @@
       (net 11 +3V3))
     (pad 1 thru_hole rect (at 0 0 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 30 !RST))
-    (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x16_P2.54mm_Vertical.wrl
-      (at (xyz 0 0 0))
+    (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.wrl
+      (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 180 0))
     )
   )
 
