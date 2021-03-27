@@ -14,6 +14,9 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 
+# Version upgrade backups
+*backups/
+
 # Netlist files (exported from Eeschema)
 *.net
 
